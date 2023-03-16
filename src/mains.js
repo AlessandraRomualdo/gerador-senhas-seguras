@@ -1,5 +1,6 @@
 import { nanoid } from 'nanoid';
 import copy  from 'clipboard-copy';
+import Swal from 'sweetalert2';
 import './style.css';
 
 const passwordBtn = document.querySelector('button');
@@ -11,5 +12,9 @@ passwordBtn.addEventListener('click', () => {
 
 displayPassword.addEventListener('click', () => {
     copy(event.target.innerHTML);
-    alert('Senha copiada!');
+    Swal.fire(
+        'Copiado!',
+        '',
+        'success'
+    )
 });
