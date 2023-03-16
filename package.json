@@ -1,21 +1,26 @@
 {
-  "name": "gerador-de-senhas",
+  "name": "gerador-senhas-segura",
   "version": "1.0.0",
-  "description": "Melhor gerador de senhas do mundo.",
+  "description": "Gerador de senhas com nanoid",
   "main": "index.js",
   "scripts": {
     "dev": "vite --open",
-    "lint": "eslint ./src"
+    "build": "vite build"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlessandraRomualdo/gerador-senhas-seguras.git"
+  },
+  "author": "Ale",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlessandraRomualdo/gerador-senhas-seguras/issues"
+  },
+  "homepage": "https://github.com/AlessandraRomualdo/gerador-senhas-seguras#readme",
   "dependencies": {
     "clipboard-copy": "^4.0.1",
     "nanoid": "^4.0.1",
     "vite": "^4.2.0"
   },
-  "type": "module",
-  "devDependencies": {
-    "eslint": "^8.36.0"
-  }
+  "type": "module"
 }
